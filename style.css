@@ -1,11 +1,46 @@
 body {
   background: #06171e;
+  color: white;
+  margin: 0;
 }
 
 header {
   background: #09212a;
+  padding: 20px 140px;
 }
 
 footer {
   background: #09212a;
+}
+
+h1{
+  font-family: Figtree;
+  font-weight: 800;
+  font-size: 56px;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.main-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 10% 0;
+}
+
+.image-container {
+  width: 150px;
+  height: 150px;
+  border-radius: 15px;
+  border: 2px solid #124658
+  
+}
+
+.image-container:hover{
+  transition: ease-out 100ms;
+  border: 2px solid #6BC1E1
 }

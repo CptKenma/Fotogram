@@ -1,0 +1,20 @@
+
+
+Ticket-2:
+- Build Dialog frame (Template)
+
+
+
+Ticket-4:
+-Style Footer
+
+Ticket-extra:
+Check out Image S/W to color hover effect
+
+
+
+Ticket-1: done
+- Add script for Image injection
+
+Ticket-3: done
+- Add Images for the Image pool

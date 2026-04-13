@@ -34,12 +34,23 @@ h1{
 .image-container {
   width: 150px;
   height: 150px;
+  object-fit: cover;
   border-radius: 15px;
-  border: 2px solid #124658
+  border: 2px solid #124658;
+  filter: grayscale(100%);
+  transition: filter 250ms ease;
   
 }
 
 .image-container:hover{
-  transition: ease-out 100ms;
-  border: 2px solid #6BC1E1
+  transition: border ease-out 100ms;
+  border: 2px solid #6BC1E1;
+  filter: grayscale(0%);
+}
+
+.image-wrapper{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 29px;
 }

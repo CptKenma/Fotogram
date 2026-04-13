@@ -14,6 +14,9 @@ let images = [
 "./img/Imgs/pexels-xperimental-33539411.jpg"
 ];
 
+const dialog = document.getElementById('image-dialog');
+
+
 function renderImages() {
     let imgContentRef = document.getElementById('img-content');
     for (let index = 0; index < images.length; index++) {
@@ -22,5 +25,10 @@ function renderImages() {
 }
 
 function insertImages(index) {
-    return `<img class="image-container" src="${images[index]}" alt="image" />`;
+    return `<img onclick="openDialog()" class="image-container" src="${images[index]}" alt="image" />`;
 }
+
+function openDialog() {
+    dialog.showModal();
+}
+

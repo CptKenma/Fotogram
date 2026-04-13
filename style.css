@@ -13,10 +13,24 @@ footer {
   background: #09212a;
 }
 
-h1{
+h1 {
   font-family: Figtree;
   font-weight: 800;
   font-size: 56px;
+}
+
+dialog {
+  width: 688px;
+  height: 675px;
+  border-radius: 40px;
+  padding: 56px 64px;
+  background: #06171e;
+  color: white;
+}
+
+dialog::backdrop {
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .container {
@@ -39,18 +53,39 @@ h1{
   border: 2px solid #124658;
   filter: grayscale(100%);
   transition: filter 250ms ease;
-  
 }
 
-.image-container:hover{
+.image-container:hover {
   transition: border ease-out 100ms;
-  border: 2px solid #6BC1E1;
+  border: 2px solid #6bc1e1;
   filter: grayscale(0%);
 }
 
-.image-wrapper{
+.image-wrapper {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 29px;
+}
+
+.dialog-main {
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+
+.dialog-img {
+  width: fit-content;
+  height: auto;
+}
+
+.dialog-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dialog-footer {
+  display: flex;
+  justify-content: center;
+  gap: 56px;
 }
